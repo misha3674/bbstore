@@ -31,7 +31,7 @@ spl_autoload_register(function ($class_name) {
 $db = new PDO('mysql:host=localhost;port=3308;dbname=mvc', 'root', '');
 // $registry->set('db', $db);
 
-$router = new Router($registry);
+$router = new Router();
 // $template = new Template();
 
 

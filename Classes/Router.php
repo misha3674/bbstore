@@ -5,18 +5,9 @@ namespace Classes;
 use Exception;
 
 Class Router {
-
-    private $registry;
-
     private $path;
 
     private $args = array();
-
-    function __construct($registry) {
-
-        $this->registry = $registry;
-
-    }
 
     function setPath($path) {
 
@@ -47,7 +38,7 @@ Class Router {
         // Создаём экземпляр контроллера
         $class = 'Controllers\Controller' .ucfirst($controller);
 
-        $controller = new $class($this->registry);
+        $controller = new $class();
 
         if (is_callable(array($controller, $action)) == false) {
 
