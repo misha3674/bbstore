@@ -39,14 +39,16 @@ Class Template {
         if(isset($_GET['route']))
             $file = $_GET['route'];
 
-        //include site_path."views".DIRSEP.str_replace("/","\\",$file).".php";
-        include site_path."views".DIRSEP."layouts".DIRSEP."app.php";
+        include site_path."views".DIRSEP.str_replace("/","\\",$file).".php";
     }
-    function style($name){
+    private function style($name){
       return "../../stylesheet/".$name;
     }
-    function js($name){
+    private function js($name){
       return "../../javascript/".$name;
+    }
+    private function partials($name){
+        include site_path."views".DIRSEP."partials".DIRSEP.$name;
     }
 }
 
