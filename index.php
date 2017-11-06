@@ -26,19 +26,19 @@ spl_autoload_register(function ($class_name) {
 
 });
 
-$registry = new Registry();
+// $registry = new Registry();
 
 $db = new PDO('mysql:host=localhost;port=3308;dbname=mvc', 'root', '');
-$router = new Router($registry);
-// create template in controller
-$template = new Template($registry);
+// $registry->set('db', $db);
 
-$registry->set('db', $db);
+$router = new Router($registry);
+// $template = new Template();
+
+
 // $registry->set('router', $router);
-$registry->set('template', $template);
+// $registry->set('template', $template);
 
 $router->setPath(site_path . 'controllers');
 $router->delegate();
-$template->show();
-
+// $template->show();
 ?>

@@ -4,14 +4,7 @@ namespace Classes;
 
 Class Template {
 
-    private $registry;
-
     private $vars = array();
-
-    function __construct($registry) {
-
-            $this->registry = $registry;
-    }
 
     function set($varname, $value, $overwrite=false) {
 
@@ -34,18 +27,22 @@ Class Template {
         return true;
     }
 
-    function show() {
+    function show($views = null) {
         $file = 'index';
         if(isset($_GET['route']))
             $file = $_GET['route'];
+        $file = rtrim($file, "/");
 
-        include site_path."views".DIRSEP.str_replace("/","\\",$file).".php";
+        if($views)
+            include $views;
+        else
+            include site_path."views".DIRSEP.str_replace("/","\\",$file).".php";
     }
     private function style($name){
-      return "../../stylesheet/".$name;
+      return "/stylesheet/".$name;
     }
     private function js($name){
-      return "../../javascript/".$name;
+      return "/javascript/".$name;
     }
     private function partials($name){
         include site_path."views".DIRSEP."partials".DIRSEP.$name;

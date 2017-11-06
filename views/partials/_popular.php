@@ -1,7 +1,7 @@
 <section>
     <?php
         $offer = "Heelo _opular";
-        echo '_cart-item-main.php';
+        include '_cart-item-main.php';
     ?>
     <div class="container">
         <div class="row">
