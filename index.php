@@ -26,7 +26,7 @@ spl_autoload_register(function ($class_name) {
 });
 
 $db = new PDO('mysql:host=localhost;port=3308;dbname=mvc', 'root', '');
-
+session_start();
 $router = new Router();
 $router->setPath(site_path . 'controllers');
 $router->delegate();

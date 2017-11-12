@@ -22,8 +22,7 @@ Class ControllerIndex extends ControllerBase {
         $data['products'][] = Product::find(8);
         $data['products'][] = Product::find(14);
 
-        // $sliderPopular = new Slider();
-        // $sliderReviews = new Slider();
+
         // $gallery = $g->getGallery();
 
         $template->show($data);

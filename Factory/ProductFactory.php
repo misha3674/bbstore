@@ -6,10 +6,17 @@ use Model\Product;
 
 class ProductFactory
 {
-    public function makeProduct($data)
+    public function make($data)
     {
         $p = new Product();
-        return $p->id;
+
+        $p->id = $data['id'];
+        $p->setName($data['name']);
+        $p->setInfo($data['description']);
+        $p->setPrice($data['price']);
+        $p->setOldPrice($data['oldprice']);
+
+        return $p;
     }
 }
 

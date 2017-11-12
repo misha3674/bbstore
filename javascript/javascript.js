@@ -4,7 +4,7 @@ function basketShow(){
   // read from session
   $.ajax({
     type: 'GET',
-    url: 'readsession.php',
+    url: '/cart/getBack',
     data: '',
     success: function(data){
       $('#list-order').html(data);
@@ -17,7 +17,7 @@ function Cart(){
 Cart.prototype.remove = function(id){
   $.ajax({
         type: 'GET',
-        url: 'removeitem.php',
+        url: '/cart/removeItem',
         data: {"id": id},
         success: function(data){
           $('#count-offer').html(data);
@@ -50,7 +50,7 @@ Cart.prototype.submit = function(){
 
   $.ajax({
         type: 'POST',
-        url: 'checkout.php',
+        url: '/cart/checkout',
         data: {
                 "phone": phone,
                 "name": name
@@ -67,7 +67,7 @@ Cart.prototype.submit = function(){
 Cart.prototype.add = function(name,price){
     $.ajax({
       type: 'GET',
-      url: 'savesession.php',
+      url: '/cart/addItem',
       data: {
         name: name,
         price: price,
@@ -86,7 +86,7 @@ $(document).ready(function(){
 
     $.ajax({
       type: 'GET',
-      url: 'countitem.php',
+      url: '/cart/countitem',
       data: "",
       success: function(data){
         $('#count-offer').html(data);
@@ -184,7 +184,7 @@ $(document).ready(function(){
 
       $.ajax({
         type: 'POST',
-        url: 'consult.php',
+        url: '/cart/consult',
         data: "phone="+phone,
         beforeSend: function(){
           $(e).html('<i class="fa fa-spinner fa-pulse fa-3x fa-fw">');

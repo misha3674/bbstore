@@ -1,17 +1,31 @@
 <?php
 
 namespace Model;
+use PDO;
+use Factory\ProductFactory;
 
 class Product extends Model
 {
     private $table = 'products';
-    private $id = 0;
+    public $id = 0;
     private $name = "";
     private $info = "";
     private $price = "";
     private $oldPrice = "";
     private $mainImg = "";
     private $addImg = [];
+
+    public static function find($id)
+    {
+        $db = $GLOBALS['db'];
+        $query = $db->prepare("SELECT * FROM products where id = :id");
+         $query->bindParam(':id', $id, PDO::PARAM_INT);
+        if ($query->execute()) {
+          $row = $query->fetch();
+          $f = new ProductFactory();
+          return $f->make($row);          
+        } 
+    }
 
     public function getName()
     {

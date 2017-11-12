@@ -13,6 +13,7 @@
     <h1>Catalog</h1>
 
     <?php $this->partials("_footer.php"); ?>
+    <?php $this->partials("_modal.php"); ?>
 
    <?php include site_path."views".DIRSEP."partials".DIRSEP."_javascript.php"; ?>
 

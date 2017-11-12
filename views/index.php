@@ -20,6 +20,7 @@
         $this->partials("_fan.php");
         $this->partials("_reviews.php");
         $this->partials("_footer.php");
+        $this->partials("_modal.php");
 
     ?>
 
