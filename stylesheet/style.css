@@ -62,7 +62,8 @@ img.logo{
 }
 .motto{
   color: #007bff;
-  font-family: monospace;
+  font-family: cursive;
+  font-size: 1.2em;
 }
 section{
   padding: 1rem 0;

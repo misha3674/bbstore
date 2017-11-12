@@ -14,13 +14,22 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <iframe width="90%" height="200" src="https://www.youtube.com/embed/yaNF3Xs9gOk" frameborder="0" allowfullscreen></iframe>
+                <!-- <iframe width="90%" height="200" src="https://www.youtube.com/embed/yaNF3Xs9gOk" frameborder="0" allowfullscreen></iframe> -->
+                <a href="https://www.youtube.com/yaNF3Xs9gOk">
+                    <img src="../../img/1.jpg" alt="">
+                </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 d-md-block d-none">
-                <iframe width="90%" height="200" src="https://www.youtube.com/embed/RJhi6w56vAo" frameborder="0" allowfullscreen></iframe>
+       <!--<iframe width="90%" height="200" src="https://www.youtube.com/embed/RJhi6w56vAo" frameborder="0" allowfullscreen></iframe> -->
+                <a href="https://www.youtube.com/yaNF3Xs9gOk">
+                    <img src="../../img/1.jpg" alt="">
+                </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-none">
-                <iframe width="90%" height="200" src="https://www.youtube.com/embed/hOhrsLEozZs" frameborder="0" allowfullscreen></iframe>
+                <!-- <iframe width="90%" height="200" src="https://www.youtube.com/embed/hOhrsLEozZs" frameborder="0" allowfullscreen></iframe> -->
+                <a href="https://www.youtube.com/yaNF3Xs9gOk">
+                    <img src="../../img/1.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>

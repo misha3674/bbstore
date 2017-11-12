@@ -5,7 +5,7 @@ namespace Classes;
 Class Template {
 
     private $vars = array();
-
+    private $data = null;
     function set($varname, $value, $overwrite=false) {
 
         if (isset($this->vars[$varname]) == true AND $overwrite == false) {
@@ -27,12 +27,12 @@ Class Template {
         return true;
     }
 
-    function show($views = null) {
+    function show($data, $views = null) {
         $file = 'index';
         if(isset($_GET['route']))
             $file = $_GET['route'];
         $file = rtrim($file, "/");
-
+        $this->data = $data;
         if($views)
             include $views;
         else
