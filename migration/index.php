@@ -1,5 +1,8 @@
 <?php
 
+    if($_GET['pwd'] !== 'migrationbbstore')
+        die(404);
+
 try{
     $db = new PDO('mysql:host=localhost;port=3308;dbname=mvc', 'root', '');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

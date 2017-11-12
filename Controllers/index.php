@@ -45,9 +45,6 @@ Class ControllerIndex extends ControllerBase {
         $data = null;
         $template->show($data);
     }
-    public function migration() {
-        include site_path."migration".DIRSEP."index.php";
-    }
 }
 
 ?>
