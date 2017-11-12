@@ -2,8 +2,10 @@
 
 namespace Model;
 
-class Product
+class Product extends Model
 {
+    private $table = 'products';
+    private $id = 0;
     private $name = "";
     private $info = "";
     private $price = "";

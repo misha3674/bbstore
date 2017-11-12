@@ -6,10 +6,10 @@ use Model\Product;
 
 class ProductFactory
 {
-    public function makeProduct()
+    public function makeProduct($data)
     {
         $p = new Product();
-        return $p;
+        return $p->id;
     }
 }
 

@@ -6,7 +6,7 @@ use Classes\ControllerBase;
 use Classes\Template;
 use Service\Gallery;
 use Service\Slider;
-use Factory\ProductFactory;
+use Model\Product;
 
 Class ControllerIndex extends ControllerBase {
 
@@ -17,11 +17,10 @@ Class ControllerIndex extends ControllerBase {
         $gallery = new Gallery();
         $data['gallery'] = $gallery;
 
-        $f = new ProductFactory();
-        $data['products'][] = $f->makeProduct();
-        $data['products'][] = $f->makeProduct();
-        $data['products'][] = $f->makeProduct();
-        $data['products'][] = $f->makeProduct();
+        $data['products'][] = Product::find(3);
+        $data['products'][] = Product::find(5);
+        $data['products'][] = Product::find(8);
+        $data['products'][] = Product::find(14);
 
         // $sliderPopular = new Slider();
         // $sliderReviews = new Slider();
@@ -38,7 +37,8 @@ Class ControllerIndex extends ControllerBase {
     }
     public function delivery() {
         $template = new Template();
-        $template->show();
+        $data = null;
+        $template->show($data);
     }
     public function certification() {
         $template = new Template();
