@@ -2,7 +2,7 @@
 
 namespace Factory;
 
-use Service\Product;
+use Model\Product;
 
 class ProductFactory
 {

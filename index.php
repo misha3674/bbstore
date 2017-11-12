@@ -3,7 +3,6 @@ namespace App;
 
 use PDO;
 use Classes\Router as Router;
-use Service\Product;
 
 
 error_reporting (E_ALL);
