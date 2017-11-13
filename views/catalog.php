@@ -43,6 +43,11 @@
                           </p>
                       </div>
                       <div class="col-xl-6 col-md-12 col-6">
+                        <a class="btn btn-primary" data-toggle="collapse" 
+                            href="#info<?php echo $product->id; ?>" 
+                            aria-expanded="false" aria-controls="collapse">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </a>
                         <a class="btn btn-success"  
                               href="javascript:cart.add(
                                 '<?php echo $product->getName(); ?>', 
@@ -53,7 +58,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="info">
+                  <div class="collapse show" id="info<?php echo $product->id; ?>">
                       <?php echo $product->getInfo(); ?>
                   </div>
                 </div>

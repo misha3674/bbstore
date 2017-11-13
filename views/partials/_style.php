@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.css">
-    
+    <link rel="stylesheet" href="/lightbox/css/lightbox.css">
     <link rel="stylesheet" href="<?php echo $this->style('style.css'); ?>" >
+
     <script src="https://use.fontawesome.com/eb4dcf5b8f.js"></script>

@@ -7,5 +7,5 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.js"></script>
-
+<script src="/lightbox/js/lightbox.js" ></script>
 <script src="<?php echo $this->js('javascript.js'); ?>" ></script>

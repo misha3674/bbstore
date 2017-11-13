@@ -65,7 +65,14 @@ class Product extends Model
 
     public function popImg()
     {
-        return "<img class='img-fluid' src='".array_pop($this->images)."'>";
+        // $src = array_pop($this->images);
+        // $img = "<img class='img-fluid' src='".$src."'>";
+        // return $img;
+
+        $src = array_pop($this->images);
+        $img = "<img class='img-fluid' src='".$src."'>";
+        $format = "<a href='%s' data-lightbox='gallery'>%s</a>";
+        return sprintf($format, $src, $img);
     }
     public function pushImg($images)
     {

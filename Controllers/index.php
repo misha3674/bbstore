@@ -35,7 +35,7 @@ Class ControllerIndex extends ControllerBase {
 
         for($i = 1; $i < 33; $i++)
             $data['products'][] = Product::find($i);
-
+        shuffle($data['products']);
         $template->show($data);
     }
     public function delivery() {
