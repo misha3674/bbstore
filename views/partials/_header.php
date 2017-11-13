@@ -27,7 +27,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <ul class="list-inline navbarmenu">
-                    <li class="list-inline-item"><a class="btn-nav" href="/catalog">Каталог товаров</a></li>
+                    <li class="list-inline-item"><a class="btn-nav" href="/catalog">Каталог товарів</a></li>
                     <li class="list-inline-item"><a class="btn-nav" href="/delivery">Доставка і Оплата</a></li>
                     <li class="list-inline-item"><a class="btn-nav" href="/certification">Сертифікати</a></li>
                 </ul>

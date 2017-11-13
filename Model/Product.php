@@ -13,7 +13,7 @@ class Product extends Model
     private $price = "";
     private $oldPrice = "";
     private $mainImg = "";
-    private $addImg = [];
+    private $images = [];
 
     public static function find($id)
     {
@@ -63,22 +63,13 @@ class Product extends Model
         $this->price = $price;
     }
 
-    public function popAddImg()
+    public function popImg()
     {
-        return "<img class='img-fluid' src='".array_pop($this->addImg)."'>";
+        return "<img class='img-fluid' src='".array_pop($this->images)."'>";
     }
-    public function pushAddImg($img)
+    public function pushImg($images)
     {
-        $this->addImg[] = $img;
-    }
-
-    public function getMainImg()
-    {
-        return "<img class='img-fluid' src='".$this->mainImg."'>";
-    }
-    public function setMainImg($img)
-    {
-        $this->mainImg = $img;
+        $this->images = $images;
     }
 }
 

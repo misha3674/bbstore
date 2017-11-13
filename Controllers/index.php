@@ -29,9 +29,13 @@ Class ControllerIndex extends ControllerBase {
 
     }
     public function catalog() {
-        // var_dump($GLOBALS['db']);
+        
         $template = new Template();
         $data = null;
+
+        for($i = 1; $i < 33; $i++)
+            $data['products'][] = Product::find($i);
+
         $template->show($data);
     }
     public function delivery() {

@@ -5,37 +5,73 @@
         <name>Homely original трава</name>
         <description>Плед з рукавами з ніжного флісу. Ідеальний аксесуар для дому, літньої тераси, відпочинку за містом і літаків, потягів, а також  є чудовим подарунком для друзів і рідних!</description>
         <price>680 грн.</price>
-	<oldprice>719 </oldprice> 
+        <oldprice>719 </oldprice> 
+        <images>
+            <img>offer/1.jpg</img>
+            <img>offer/2.jpg</img>
+            <img>offer/3.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
     <offer id="2">
         <name>Homely original синій</name>
         <description>Плед з рукавами з ніжного флісу. Ідеальний аксесуар для дому, літньої тераси, відпочинку за містом і літаків, потягів, а також  є чудовим подарунком для друзів і рідних!</description>
         <price>680грн.</price>
-	<oldprice>719 </oldprice> 
+        <oldprice>719 </oldprice>
+        <images>
+            <img>offer/4.jpg</img>
+            <img>offer/5.jpg</img>
+            <img>offer/6.jpg</img>
+            <img>offer/01.jpg</img>
+        </images> 
     </offer>
     <offer id="3">
         <name>Homely original зелений</name>
         <description>Плед з рукавами з ніжного флісу. Ідеальний аксесуар для дому, літньої тераси, відпочинку за містом і літаків, потягів, а також  є чудовим подарунком для друзів і рідних!</description>
         <price>680 грн.</price>
-	<oldprice>719 </oldprice> 
+        <oldprice>719 </oldprice> 
+        <images>
+            <img>offer/7.jpg</img>
+            <img>offer/8.jpg</img>
+            <img>offer/9.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
     <offer id="4">
         <name>Homely original сірий</name>
         <description>Плед з рукавами з ніжного флісу. Ідеальний аксесуар для дому, літньої тераси, відпочинку за містом і літаків, потягів, а також  є чудовим подарунком для друзів і рідних!</description>
         <price>680 грн.</price>
-	<oldprice>719 </oldprice> 
+        <oldprice>719 </oldprice> 
+        <images>
+            <img>offer/10.jpg</img>
+            <img>offer/11.jpg</img>
+            <img>offer/12.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
     <offer id="5">
         <name>Homely original фіолетовий</name>
         <description>Плед з рукавами з ніжного флісу. Ідеальний аксесуар для дому, літньої тераси, відпочинку за містом і літаків, потягів, а також  є чудовим подарунком для друзів і рідних!</description>
         <price>680 грн.</price>
-	<oldprice>719 </oldprice> 
+        <oldprice>719 </oldprice> 
+        <images>
+            <img>offer/13.jpg</img>
+            <img>offer/14.jpg</img>
+            <img>offer/15.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
     <offer id="6">
         <name>Homely original бордо</name>
         <description>Плед з рукавами з ніжного флісу. Ідеальний аксесуар для дому, літньої тераси, відпочинку за містом і літаків, потягів, а також  є чудовим подарунком для друзів і рідних!</description>
         <price>680 грн.</price>
-	<oldprice>719 </oldprice> 
+        <oldprice>719 </oldprice> 
+        <images>
+            <img>offer/16.jpg</img>
+            <img>offer/17.jpg</img>
+            <img>offer/18.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
 
 
@@ -43,49 +79,97 @@
         <name>Homely luxury зелений</name>
         <description>Плед з рукавами з ніжної мікрофібри(велсофт). Аксесуар для справжніх цінувачів комфорту. Щільніший, тепліший і дуже ніжний плед з рукавами. Кожен повинен мати такий. Приємніше на дотик немає нічого кращого.Розмір: 140*180 Щільність: 300 г/м2</description>
         <price>899 грн.</price>
-	<oldprice>949 </oldprice>
+        <oldprice>949 </oldprice>
+        <images>
+            <img>offer/19.jpg</img>
+            <img>offer/20.jpg</img>
+            <img>offer/21.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="8">
         <name>Homely luxury бузковий</name>
         <description>Плед з рукавами з ніжної мікрофібри(велсофт). Аксесуар для справжніх цінувачів комфорту. Щільніший, тепліший і дуже ніжний плед з рукавами. Кожен повинен мати такий. Приємніше на дотик немає нічого кращого. Розмір: 140*180 Щільність: 300 г/м2</description>
         <price>899 грн.</price>
-	<oldprice>949 </oldprice>
+        <oldprice>949 </oldprice>
+        <images>
+            <img>offer/22.jpg</img>
+            <img>offer/23.jpg</img>
+            <img>offer/24.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="9">
         <name>Homely luxury клітка</name>
         <description>Плед з рукавами з ніжної мікрофібри(велсофт). Аксесуар для справжніх цінувачів комфорту. Щільніший, тепліший і дуже ніжний плед з рукавами. Кожен повинен мати такий. Приємніше на дотик немає нічого кращого. Розмір: 140*180. Щільність: 300 г/м2</description>
         <price>899 грн.</price>
-	<oldprice>949 </oldprice>
+        <oldprice>949 </oldprice>
+        <images>
+            <img>offer/25.jpg</img>
+            <img>offer/26.jpg</img>
+            <img>offer/27.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="10">
         <name>Homely luxury бордо</name>
         <description>Плед з рукавами з ніжної мікрофібри(велсофт). Аксесуар для справжніх цінувачів комфорту. Щільніший, тепліший і дуже ніжний плед з рукавами. Кожен повинен мати такий. Приємніше на дотик немає нічого кращого. Розмір: 140*180. Щільність: 350 г/м2</description>
         <price>899 грн.</price>
-	<oldprice>949 </oldprice>
+        <oldprice>949 </oldprice>
+        <images>
+            <img>offer/28.jpg</img>
+            <img>offer/29.jpg</img>
+            <img>offer/30.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="11">
         <name>Homely luxury темно-cиній</name>
         <description>Плед з рукавами з ніжної мікрофібри(велсофт). Аксесуар для справжніх цінувачів комфорту. Щільніший, тепліший і дуже ніжний плед з рукавами. Кожен повинен мати такий. Приємніше на дотик немає нічого кращого. Розмір: 140*180. Щільність: 350 г/м2</description>
         <price>899 грн.</price>
-	<oldprice>949 </oldprice>
+        <oldprice>949 </oldprice>
+        <images>
+            <img>offer/31.jpg</img>
+            <img>offer/32.jpg</img>
+            <img>offer/33.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="12">
         <name>Homely luxury бежевий</name>
         <description>Плед з рукавами з ніжної мікрофібри(велсофт). Аксесуар для справжніх цінувачів комфорту. Щільніший, тепліший і дуже ніжний плед з рукавами. Кожен повинен мати такий. Приємніше на дотик немає нічого кращого. Розмір: 140*180. Щільність: 300 г/м2</description>
         <price>899 грн.</price>
-	<oldprice>949 </oldprice>
+        <oldprice>949 </oldprice>
+        <images>
+            <img>offer/34.jpg</img>
+            <img>offer/35.jpg</img>
+            <img>offer/36.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="13">
         <name>Homely luxury морськая хвиля</name>
         <description>Плед з рукавами з ніжної мікрофібри(велсофт). Аксесуар для справжніх цінувачів комфорту. Щільніший, тепліший і дуже ніжний плед з рукавами. Кожен повинен мати такий. Приємніше на дотик немає нічого кращого. Розмір: 140*180. Щільність: 300 г/м2</description>
         <price>899 грн.</price>
-	<oldprice>949 </oldprice>
+        <oldprice>949 </oldprice>
+        <images>
+            <img>offer/37.jpg</img>
+            <img>offer/38.jpg</img>
+            <img>offer/39.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="14">
         <name>Homely luxury голубий</name>
         <description>Плед з рукавами з ніжної мікрофібри(велсофт). Аксесуар для справжніх цінувачів комфорту. Щільніший, тепліший і дуже ніжний плед з рукавами. Кожен повинен мати такий. Приємніше на дотик немає нічого кращого. Розмір: 140*180. Щільність: 300 г/м2</description>
         <price>899 грн.</price>
-	<oldprice>949 </oldprice>
+        <oldprice>949 </oldprice>
+        <images>
+            <img>offer/40.jpg</img>
+            <img>offer/41.jpg</img>
+            <img>offer/42.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
 
 
@@ -94,21 +178,45 @@
         <name>Homely kids original червоний</name>
         <description>Плед з рукавами для дітей, зростом до 140 см. Довжина рукава: 40см. Хороший аксесуар для того, щоб Ваша дитина була в теплі, коли бавиться, вчиться, дивиться  телевізор і навіть їсть. </description>
         <price>549 грн.</price>
+        <images>
+            <img>offer/43.jpg</img>
+            <img>offer/44.jpg</img>
+            <img>offer/45.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
     <offer id="16">
         <name>Homely kids original рожевий</name>
         <description>Плед з рукавами для дітей, зростом до 140 см. Довжина рукава: 40см. Хороший аксесуар для того, щоб Ваша дитина була в теплі, коли бавиться, вчиться, дивиться  телевізор і навіть їсть. </description>
         <price>549 грн.</price>
+        <images>
+            <img>offer/46.jpg</img>
+            <img>offer/47.jpg</img>
+            <img>offer/48.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
     <offer id="17">
         <name>Homely kids original зелений</name>
         <description>Плед з рукавами для дітей, зростом до 140 см. Довжина рукава: 40см. Хороший аксесуар для того, щоб Ваша дитина була в теплі, коли бавиться, вчиться, дивиться  телевізор і навіть їсть. </description>
         <price>549 грн.</price>
+        <images>
+            <img>offer/49.jpg</img>
+            <img>offer/50.jpg</img>
+            <img>offer/51.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
     <offer id="18">
         <name>Homely kids original салатовий</name>
         <description>Плед з рукавами для дітей, зростом до 140 см. Довжина рукава: 40см. Хороший аксесуар для того, щоб Ваша дитина була в теплі, коли бавиться, вчиться, дивиться  телевізор і навіть їсть. </description>
         <price>549 грн.</price>
+        <images>
+            <img>offer/52.jpg</img>
+            <img>offer/53.jpg</img>
+            <img>offer/54.jpg</img>
+            <img>offer/01.jpg</img>
+        </images>
     </offer>
 
 
@@ -117,16 +225,34 @@
         <name>Homely kids luxury голубий</name>
         <description>Плед з рукавами для дітей, зростом до 140 см. Довжина рукава: 40см. Неймовірно м'яка і ніжна тканина. Відмінний аксесуар для того, щоб Ваша дитина була в теплі, коли бавиться, вчиться, дивиться телевізор і навіть їсть. </description>
         <price>799 грн.</price>
+        <images>
+            <img>offer/55.jpg</img>
+            <img>offer/56.jpg</img>
+            <img>offer/57.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="20">
         <name>Homely kids luxury бордо</name>
         <description>Плед з рукавами для дітей, зростом до 140 см. Довжина рукава: 40см. Неймовірно м'яка і ніжна тканина. Відмінний аксесуар для того, щоб Ваша дитина була в теплі, коли бавиться, вчиться, дивиться телевізор і навіть їсть. </description>
         <price>799 грн.</price>
+        <images>
+            <img>offer/58.jpg</img>
+            <img>offer/59.jpg</img>
+            <img>offer/60.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
     <offer id="21">
         <name>Homely kids luxury синій</name>
         <description>Плед з рукавами для дітей, зростом до 140 см. Довжина рукава: 40см. Неймовірно м'яка і ніжна тканина. Відмінний аксесуар для того, щоб Ваша дитина була в теплі, коли бавиться, вчиться, дивиться телевізор і навіть їсть. </description>
         <price>799 грн.</price>
+        <images>
+            <img>offer/61.jpg</img>
+            <img>offer/62.jpg</img>
+            <img>offer/63.jpg</img>
+            <img>offer/02.jpg</img>
+        </images>
     </offer>
 
 
@@ -134,36 +260,57 @@
         <name>Homely limited зелений</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з 2 карманами для гаджетів, і поясом в подарунок! Тепла, м'яка, ніжна тканина підвищеної щільності, розмір -140 x 200 см.</description>
         <price>1199 грн.</price>
+        <images>
+            <img>offer/64.jpg</img>
+        </images>
     </offer>
     <offer id="23">
         <name>Homely limited клітка</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з 2 карманами для гаджетів, і поясом в подарунок! Тепла, м'яка, ніжна тканина підвищеної щільності, розмір -140 x 200 см.</description>
         <price>1199 грн.</price>
+        <images>
+            <img>offer/65.jpg</img>
+        </images>
     </offer>
     <offer id="24">
         <name>Homely limited бордо</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з:- 2 карманами для гаджетів, і поясом в подарунок! - розмір -140 x 200 см.- щільність 350 г/м2.Тепла, м'яка, ніжна тканина підвищеної щільності</description>
         <price>1219 грн.</price>
+        <images>
+            <img>offer/66.jpg</img>
+        </images>
     </offer>
     <offer id="25">
         <name>Homely limited голубий</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з 2 карманами для гаджетів, і поясом в подарунок! Тепла, м'яка, ніжна тканина підвищеної щільності, розмір -140 x 200 см.</description>
         <price>1199 грн.</price>
+        <images>
+            <img>offer/67.jpg</img>
+        </images>
     </offer>
     <offer id="26">
         <name>Homely limited бузковий</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з 2 карманами для гаджетів, і поясом в подарунок! Тепла, м'яка, ніжна тканина підвищеної щільності, розмір -140 x 200 см.</description>
         <price>1199 грн.</price>
+        <images>
+            <img>offer/68.jpg</img>
+        </images>
     </offer>
     <offer id="27">
         <name>Homely limited бежевий</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з:- 2 карманами для гаджетів, і поясом в подарунок! - розмір -140 x 200 см.- щільність 350 г/м2.Тепла, м'яка, ніжна тканина підвищеної щільності</description>
         <price>1199 грн.</price>
+        <images>
+            <img>offer/69.jpg</img>
+        </images>
     </offer>
     <offer id="28">
         <name>Homely limited темно-синій</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з:- 2 карманами для гаджетів, і поясом в подарунок! - розмір -140 x 200 см.- щільність 350 г/м2. Тепла, м'яка, ніжна тканина підвищеної щільності</description>
         <price>1199 грн.</price>
+        <images>
+            <img>offer/70.jpg</img>
+        </images>
     </offer>
 
 
@@ -171,28 +318,33 @@
         <name>Homely double світло-сірий</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з 4 рукавами! Тепла, м'яка, ніжна тканина підвищеної щільності, розмір -180 x 300 см.</description>
         <price>1619 грн.</price>
+        <images>
+            <img>offer/71.jpg</img>
+        </images>
     </offer>
     <offer id="30">
         <name>Homely double морська хвиля</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з 4 рукавами! Тепла, м'яка, ніжна тканина підвищеної щільності, розмір -180 x 300 см.</description>
         <price>1619 грн.</price>
+        <images>
+            <img>offer/72.jpg</img>
+        </images>
     </offer>
     <offer id="31">
         <name>Homely double бузковий</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з 4 рукавами! Тепла, м'яка, ніжна тканина підвищеної щільності, розмір -180 x 300 см.</description>
         <price>1619 грн.</price>
+        <images>
+            <img>offer/73.jpg</img>
+        </images>
     </offer>
     <offer id="32">
         <name>Homely double синій</name>
         <description>Плед з рукавами з найніжнішої мікрофібри(велсофт) з 4 рукавами! Тепла, м'яка, ніжна тканина підвищеної щільності, розмір -180 x 300 см.</description>
         <price>1619 грн.</price>
+        <images>
+            <img>offer/74.jpg</img>
+        </images>
     </offer>
-
-
-
-
-
-
-
 
 </offers>

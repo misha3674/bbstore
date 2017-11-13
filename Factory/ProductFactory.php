@@ -15,6 +15,7 @@ class ProductFactory
         $p->setInfo($data['description']);
         $p->setPrice($data['price']);
         $p->setOldPrice($data['oldprice']);
+        $p->pushImg(array_reverse(unserialize($data['images'])));
 
         return $p;
     }

@@ -12,20 +12,27 @@ try{
                 description VARCHAR(255) NOT NULL,
                 price INT(6),
                 oldprice INT(6),
-                filter VARCHAR(255)
+                images VARCHAR(255)
             )";
     $db->exec($sql);
 
     $xml=simplexml_load_file("offer.xml") or die("Error: Cannot create object");
-    $insert = "INSERT INTO products (name, description, price, oldprice) VALUES";
-    $format = "('%s', '%s', %d, %d)";
+    $insert = "INSERT INTO products (name, description, price, oldprice, images) VALUES";
+    $format = "('%s', '%s', %d, %d, '%s')";
     $values = [];
     foreach($xml as $offer)
     {
+        $imgs = [];
+        foreach($offer->images[0] as $i)
+        {
+            $imgs[] = (string)$i;
+        }
         $values[]=sprintf($format, addslashes($offer->name), 
                                     addslashes($offer->description), 
                                     $offer->price, 
-                                    $offer->oldprice);
+                                    $offer->oldprice,
+                                    serialize($imgs)
+                                );
     }
     $sql = $insert.implode(",", $values).";";
     echo "<pre>";

@@ -9,21 +9,13 @@
                 <div class="container">
                   <div class="row justify-content-center">
                       <div class="col-9">
-                        <?php echo $product->getMainImg(); ?>
+                        <?php echo $product->popImg(); ?>
                       </div>
                       <div class="col-3">
                         <div class="box-add-photo">
-                            <?php echo $product->popAddImg(); ?>
-                            <?php echo $product->popAddImg(); ?>
-                            <?php  if(preg_match('/luxury/',$product->getName())) { ?>
-                            <a href="offer/02.jpg">
-                                <img src="offer/002.jpg" alt="sorry">
-                            </a>
-                            <?php }else { ?>
-                                <a href="offer/01.jpg">
-                                    <img src="offer/001.jpg" alt="sorry">
-                                </a>    
-                            <?php } ?>
+                            <?php echo $product->popImg(); ?>
+                            <?php echo $product->popImg(); ?>
+                            <?php echo $product->popImg(); ?>
                         </div>
                       </div>
                   </div>

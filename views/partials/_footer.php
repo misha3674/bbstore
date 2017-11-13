@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-sm-8 align-self-center">
                         <ul class="f-nav">
-                            <li><a href="/catalog">Каталог товаров</a></li>
+                            <li><a href="/catalog">Каталог товарів</a></li>
                             <li><a href="/delivery">Доставка і Оплата</a></li>
                             <li><a href="/certification">Сертифікати</a></li>
                         </ul>
