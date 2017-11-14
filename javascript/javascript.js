@@ -159,10 +159,6 @@ $(document).ready(function(){
           scrollTop: $("#advice").offset().top
       }, 500);
     });
-
-    api = $("#gallery").unitegallery({
-      tiles_type:"justified"
-    });
     
     $('#modal-basket').on('hidden.bs.modal',function(){
       $('#list-order').html('<tr><td><h1 class="text-center"><i class="fa fa-spinner fa-spin fa-2x fa-fw" aria-hidden="true"></i></h1></td></tr>');

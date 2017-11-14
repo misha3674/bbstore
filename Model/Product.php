@@ -70,7 +70,8 @@ class Product extends Model
         // return $img;
 
         $src = array_pop($this->images);
-        $img = "<img class='img-fluid' src='".$src."'>";
+        $smallImg = preg_replace('/offer\//', 'offer/tmp/_', $src);
+        $img = "<img class='img-fluid' src='".$smallImg."'>";
         $format = "<a href='%s' data-lightbox='gallery'>%s</a>";
         return sprintf($format, $src, $img);
     }
