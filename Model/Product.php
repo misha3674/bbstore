@@ -13,7 +13,7 @@ class Product extends Model
     private $price = "";
     private $oldPrice = "";
     private $mainImg = "";
-    private $images = [];
+    public $images = [];
 
     public static function find($id)
     {
@@ -71,7 +71,7 @@ class Product extends Model
 
         $src = array_pop($this->images);
         $smallImg = preg_replace('/offer\//', 'offer/tmp/_', $src);
-        $img = "<img class='img-fluid' src='".$smallImg."'>";
+        $img = "<img class='img-fluid' src='".$src."'>";
         $format = "<a href='%s' data-lightbox='gallery'>%s</a>";
         return sprintf($format, $src, $img);
     }

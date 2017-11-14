@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-lg-4 text-center"><i class="fa fa-users" aria-hidden="true"></i></div>
                     <div class="col align-self-center">
-                        <p class="text-xl-left text-lg-left text-center">Більш 2500 задоволених клієнтів</p>
+                        <p class="text-xl-left text-lg-left text-center">Більше 500 задоволених клієнтів</p>
                     </div>
                 </div>
             </div>

@@ -16,16 +16,22 @@
                 <div class="cart-item">
                   <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-9">
-                          <?php echo $product->popImg(); ?>
-                        </div>
-                        <div class="col-3">
-                          <div class="box-add-photo">
-                              <?php echo $product->popImg(); ?>
-                              <?php echo $product->popImg(); ?>
-                              <?php echo $product->popImg(); ?>
+                        <?php if(count($product->images) > 1) { ?>
+                          <div class="col-9">
+                            <?php echo $product->popImg(); ?>
                           </div>
-                        </div>
+                          <div class="col-3">
+                            <div class="box-add-photo">
+                                <?php echo $product->popImg(); ?>
+                                <?php echo $product->popImg(); ?>
+                                <?php echo $product->popImg(); ?>
+                            </div>
+                          </div>
+                        <?php } else { ?>
+                          <div class="col">
+                            <?php echo $product->popImg(); ?>
+                          </div>
+                        <?php } ?>
                     </div>
                   </div>
                   <p class="name text-left"><?php echo $product->getName(); ?></p>
