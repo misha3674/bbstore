@@ -288,15 +288,7 @@
         windowWidth    = $(window).width();
         windowHeight   = $(window).height();
         maxImageWidth  = windowWidth - self.containerPadding.left - self.containerPadding.right - self.imageBorderWidth.left - self.imageBorderWidth.right - 20;
-        maxImageHeight = windowHeight - self.containerPadding.top - self.containerPadding.bottom - self.imageBorderWidth.top - self.imageBorderWidth.bottom - 120;
-
-        // Check if image size is larger then maxWidth|maxHeight in settings
-        if (self.options.maxWidth && self.options.maxWidth < maxImageWidth) {
-          maxImageWidth = self.options.maxWidth;
-        }
-        if (self.options.maxHeight && self.options.maxHeight < maxImageWidth) {
-          maxImageHeight = self.options.maxHeight;
-        }
+        maxImageHeight = windowHeight - self.containerPadding.top - self.containerPadding.bottom - self.imageBorderWidth.top - self.imageBorderWidth.bottom - 40;
 
         // Is the current image's width or height is greater than the maxImageWidth or maxImageHeight
         // option than we need to size down while maintaining the aspect ratio.

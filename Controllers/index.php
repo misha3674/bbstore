@@ -32,10 +32,6 @@ Class ControllerIndex extends ControllerBase {
         
         $template = new Template();
         $data = null;
-
-        // for($i = 1; $i < 33; $i++)
-        //     $data['products'][] = Product::find($i);
-        // shuffle($data['products']);
         $type = 1;
         if(isset($_GET['type']))
             $type = $_GET['type'];
