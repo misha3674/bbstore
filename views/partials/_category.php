@@ -2,27 +2,31 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="/catalog?type=1">
-                    <p>Для детей</p>
-                    <img class="img-fluid rounded" src="/img/kid.jpg" alt="children">
+                <a href="/catalog?type=2">
+                    <section class="kid">
+                        <p class="text-center">Для детей</p>
+                    </section>
                 </a>
             </div>
             <div class="col">
-                <a href="catalog?type=2">
-                    <p>З двома рукавами</p>
-                    <img class="img-fluid rounded" src="/img/classic.jpg" alt="classic">
+                <a href="catalog?type=1">
+                    <section class="classic">
+                        <p class="text-center">З двома рукавами</p>
+                    </section>
                 </a>
             </div>
             <div class="col">
                 <a href="/catalog?type=3">
-                    <p>З чотирма рукавами</p>
-                    <img class="img-fluid rounded" src="/img/double.jpg" alt="double">
+                    <section class="double">
+                        <p class="text-center">З чотирма рукавами</p>
+                    </section>
                 </a>
             </div>
             <div class="col">
                 <a href="/catalog?type=4">
-                    <p>Без рукавів</p>
-                    <img class="img-fluid rounded" src="/img/original.jpg" alt="original">
+                    <section class="original">
+                        <p class="text-center">Без рукавів</p>
+                    </section>
                 </a>
             </div>
         </div>

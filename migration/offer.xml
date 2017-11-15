@@ -12,6 +12,7 @@
             <img>offer/3.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="2">
         <name>Homely original синій</name>
@@ -23,7 +24,8 @@
             <img>offer/5.jpg</img>
             <img>offer/6.jpg</img>
             <img>offer/01.jpg</img>
-        </images> 
+        </images>
+		<type>1</type>
     </offer>
     <offer id="3">
         <name>Homely original зелений</name>
@@ -36,6 +38,7 @@
             <img>offer/9.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="4">
         <name>Homely original сірий</name>
@@ -48,6 +51,7 @@
             <img>offer/12.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="5">
         <name>Homely original фіолетовий</name>
@@ -60,6 +64,7 @@
             <img>offer/15.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="6">
         <name>Homely original бордо</name>
@@ -72,6 +77,7 @@
             <img>offer/18.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>1</type>
     </offer>
 
 
@@ -86,6 +92,7 @@
             <img>offer/21.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="8">
         <name>Homely luxury бузковий</name>
@@ -98,6 +105,7 @@
             <img>offer/24.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="9">
         <name>Homely luxury клітка</name>
@@ -110,6 +118,7 @@
             <img>offer/27.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="10">
         <name>Homely luxury бордо</name>
@@ -122,6 +131,7 @@
             <img>offer/30.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="11">
         <name>Homely luxury темно-cиній</name>
@@ -134,6 +144,7 @@
             <img>offer/33.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="12">
         <name>Homely luxury бежевий</name>
@@ -146,6 +157,7 @@
             <img>offer/36.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="13">
         <name>Homely luxury морськая хвиля</name>
@@ -158,6 +170,7 @@
             <img>offer/39.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="14">
         <name>Homely luxury голубий</name>
@@ -170,6 +183,7 @@
             <img>offer/42.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>1</type>
     </offer>
 
 
@@ -184,6 +198,7 @@
             <img>offer/45.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>2</type>
     </offer>
     <offer id="16">
         <name>Homely kids original рожевий</name>
@@ -195,6 +210,7 @@
             <img>offer/48.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>2</type>
     </offer>
     <offer id="17">
         <name>Homely kids original зелений</name>
@@ -206,6 +222,7 @@
             <img>offer/51.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>2</type>
     </offer>
     <offer id="18">
         <name>Homely kids original салатовий</name>
@@ -217,6 +234,7 @@
             <img>offer/54.jpg</img>
             <img>offer/01.jpg</img>
         </images>
+		<type>2</type>
     </offer>
 
 
@@ -231,6 +249,7 @@
             <img>offer/57.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>2</type>
     </offer>
     <offer id="20">
         <name>Homely kids luxury бордо</name>
@@ -242,6 +261,7 @@
             <img>offer/60.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>2</type>
     </offer>
     <offer id="21">
         <name>Homely kids luxury синій</name>
@@ -253,6 +273,7 @@
             <img>offer/63.jpg</img>
             <img>offer/02.jpg</img>
         </images>
+		<type>2</type>
     </offer>
 
 
@@ -263,6 +284,7 @@
         <images>
             <img>offer/64.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="23">
         <name>Homely limited клітка</name>
@@ -271,6 +293,7 @@
         <images>
             <img>offer/65.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="24">
         <name>Homely limited бордо</name>
@@ -279,6 +302,7 @@
         <images>
             <img>offer/66.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="25">
         <name>Homely limited голубий</name>
@@ -287,6 +311,7 @@
         <images>
             <img>offer/67.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="26">
         <name>Homely limited бузковий</name>
@@ -295,6 +320,7 @@
         <images>
             <img>offer/68.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="27">
         <name>Homely limited бежевий</name>
@@ -303,6 +329,7 @@
         <images>
             <img>offer/69.jpg</img>
         </images>
+		<type>1</type>
     </offer>
     <offer id="28">
         <name>Homely limited темно-синій</name>
@@ -311,6 +338,7 @@
         <images>
             <img>offer/70.jpg</img>
         </images>
+		<type>1</type>
     </offer>
 
 
@@ -321,6 +349,7 @@
         <images>
             <img>offer/71.jpg</img>
         </images>
+		<type>3</type>
     </offer>
     <offer id="30">
         <name>Homely double морська хвиля</name>
@@ -329,6 +358,7 @@
         <images>
             <img>offer/72.jpg</img>
         </images>
+		<type>3</type>
     </offer>
     <offer id="31">
         <name>Homely double бузковий</name>
@@ -337,6 +367,7 @@
         <images>
             <img>offer/73.jpg</img>
         </images>
+		<type>3</type>
     </offer>
     <offer id="32">
         <name>Homely double синій</name>
@@ -345,6 +376,7 @@
         <images>
             <img>offer/74.jpg</img>
         </images>
+		<type>3</type>
     </offer>
 
 </offers>

@@ -42,7 +42,7 @@
     albumLabel: 'Картинака %1 з %2',
     alwaysShowNavOnTouchDevices: false,
     fadeDuration: 600,
-    fitImagesInViewport: false,
+    fitImagesInViewport: true,
     imageFadeDuration: 500,
     positionFromTop: 25,
     resizeDuration: 700,

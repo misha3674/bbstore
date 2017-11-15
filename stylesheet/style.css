@@ -41,6 +41,7 @@ span.black{
 }
 .img-advanture+h4{
   font-family: "MuseoSansMedium";
+  color: #007bff;
 }
 a{
   transition: 0.3s all ease;
@@ -78,12 +79,15 @@ section{
 }
 .head{
   font-size: 2.25rem;
-  color: #fff;
+  color: rgb(32, 183, 117);
+  background: linear-gradient(135deg, rgb(18, 188, 176) 20%, rgb(250, 190, 14) 70%);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .desc{
   font-size: 3rem;
   letter-spacing: 5px;
-  color: #fff;
+  color: #f00;
 }
 .btn-advice{
   margin-top: 1rem;
@@ -405,9 +409,34 @@ input[type=checkbox]{
   background-color: #000;
   margin-bottom: -0.5rem;
 }
+.bg-offer{
+  background-color: rgba(0, 0, 0, .2);
+}
+
 .category{
-  color: #fff;
   background-color: #000;
+}
+.category a{
+  color: #007bff;
+}
+.category section{
+  height: 250px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  border-radius: 4px;
+}
+.kid{
+  background-image: url('/img/kid.jpg');
+}
+.original{
+  background-image: url('/img/original.jpg');
+}
+.classic{
+  background-image: url('/img/classic.jpg');
+}
+.double{
+  background-image: url('/img/double.jpg');
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) { 

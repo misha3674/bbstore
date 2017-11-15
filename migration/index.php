@@ -12,13 +12,14 @@ try{
                 description VARCHAR(255) NOT NULL,
                 price INT(6),
                 oldprice INT(6),
+                type INT(6),
                 images VARCHAR(255)
             )";
     $db->exec($sql);
 
     $xml=simplexml_load_file("offer.xml") or die("Error: Cannot create object");
-    $insert = "INSERT INTO products (name, description, price, oldprice, images) VALUES";
-    $format = "('%s', '%s', %d, %d, '%s')";
+    $insert = "INSERT INTO products (name, description, price, oldprice, type, images) VALUES";
+    $format = "('%s', '%s', %d, %d, %d, '%s')";
     $values = [];
     foreach($xml as $offer)
     {
@@ -31,6 +32,7 @@ try{
                                     addslashes($offer->description), 
                                     $offer->price, 
                                     $offer->oldprice,
+                                    $offer->type,
                                     serialize($imgs)
                                 );
     }

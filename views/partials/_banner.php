@@ -1,6 +1,6 @@
 <section class="wrapper-main">
     <div class="container">
-        <div class="row justify-content-end">
+<!--         <div class="row justify-content-end">
             <div class="col-md-6">
                 <h1>Встигни купити зі скидкою 10%</h1>
                 <p>До кінця акції залишилось</p>
@@ -23,5 +23,14 @@
                   </div>
                 </div>
         </div>
+    </div> -->
+    <div class="row justify-content-end">
+      <div class="col-md-6 bg-offer">
+          <div class="off">
+            <p class="text-md-center text-sm-right text-right head">При замовленні 3-х</p>
+            <p class="text-md-left  text-sm-right text-right head">4-й в подарунок</p>
+            <p class="text-md-center text-sm-right text-right desc">1+1+1=4</p>
+          </div>
+      </div>
     </div>
 </section>

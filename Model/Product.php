@@ -26,7 +26,21 @@ class Product extends Model
           return $f->make($row);          
         } 
     }
-
+    public static function findWhere($col, $val)
+    {
+        $db = $GLOBALS['db'];
+        $res = [];
+        $query = $db->prepare("SELECT * FROM products where type = :type");
+         $query->bindParam(':type', $val, PDO::PARAM_INT);
+        if ($query->execute()) {
+          while($row = $query->fetch())
+          {
+            $f = new ProductFactory();
+            $res[] = $f->make($row); 
+          }
+        }
+        return $res; 
+    }
     public function getName()
     {
         return $this->name;
@@ -71,7 +85,7 @@ class Product extends Model
 
         $src = array_pop($this->images);
         $smallImg = preg_replace('/offer\//', 'offer/tmp/_', $src);
-        $img = "<img class='img-fluid' src='".$src."'>";
+        $img = "<img class='img-fluid' src='".$smallImg."'>";
         $format = "<a href='%s' data-lightbox='gallery'>%s</a>";
         return sprintf($format, $src, $img);
     }
