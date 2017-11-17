@@ -1,7 +1,20 @@
+function Modal(){
+  // var modal = $('#modal');
+}
+Modal.prototype.filter = function() {
+  // console.log(modal);
+  $.ajax({
+    url: '/modal/filter',
+    success: function(data){
+      $('#modal .modal-content').html(data);
+      $('#modal').modal('show');
+    }
+  });
+}
+var modal = new Modal();
 
 function basketShow(){
   $('#modal-basket').modal('show');
-  // read from session
   $.ajax({
     type: 'GET',
     url: '/cart/getBack',
@@ -29,7 +42,6 @@ Cart.prototype.remove = function(id){
 Cart.prototype.submit = function(){
   var name = $('[name="namechekout"]').val(), 
       phone = $('[name="phonechekout"]').val(),
-      //regExpName= /^[Є-ЇІЙa-zа-я'` ]{5,40}$/iu,
       regExpPhone= /^((\d|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/u;
 
   if(name.length<3)
@@ -58,8 +70,8 @@ Cart.prototype.submit = function(){
         success: function(data){
           $('[name="namechekout"]').val("");
           $('[name="phonechekout"]').val("");
-          $('#modal-thanks .modal-body').html(data);
-          $('#modal-thanks').modal('show');
+          $('#modal .modal-content').html(data);
+          $('#modal').modal('show');
           $('#count-offer').html(0);
         }
       });
@@ -134,13 +146,21 @@ $(document).ready(function(){
         }
       ]
     });
-
+    var btnFilter = $('.filter > a'),
+      header = $('header');
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("scrollup").style.display = "block";
         } else {
             document.getElementById("scrollup").style.display = "none";
+        }
+
+        if(document.body.scrollTop > header.height() || document.documentElement.scrollTop > header.height()) {
+          btnFilter.css('position', 'fixed')
+            .css('top', '25px');
+        } else {
+          btnFilter.css('position', 'static');
         }
     }
     $('#scrollup').on('click', function(e){
@@ -194,53 +214,32 @@ $(document).ready(function(){
       $(this).removeClass('alert-danger');
     });
 
-
     $('.nav-subitem').on('click', function(e){
        $(this).next().fadeToggle( "fast", "linear" );
     });
 
+    $(document).on('click', '#filter-apply', function(e){
+      e.preventDefault();
+      var data = [];
+      $('.filter-option:checked').each(function(index){
+        data.push(this.value);
+      });
+      $.ajax({
+        type: 'GET',
+        url: '/catalog',
+        data: {
+          data: JSON.stringify(data)
+        },
+        beforeSend: function(){
+          $(e).html('<i class="fa fa-spinner fa-pulse fa-3x fa-fw">');
+        },
+        success: function(data){
+          $('#content').html(data);
+          $('#modal').modal('hide');
+        },
+        complete: function(){
+          $(e).html('Показати');
+        }
+      });
+    });
   }); // end document ready
-
-// timer
-
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);

@@ -26,12 +26,19 @@ class Product extends Model
           return $f->make($row);          
         } 
     }
-    public static function findWhere($col, $val)
+    public static function findWhere($param)
     {
         $db = $GLOBALS['db'];
         $res = [];
-        $query = $db->prepare("SELECT * FROM products where type = :type");
-         $query->bindParam(':type', $val, PDO::PARAM_INT);
+        if(!count($param['type']))
+        {
+            $query = $db->prepare("SELECT * FROM products");
+        }
+        else
+        {
+            $ids = implode(',', $param['type']);
+            $query = $db->prepare("SELECT * FROM products where type in (".$ids.")");
+        }
         if ($query->execute()) {
           while($row = $query->fetch())
           {
@@ -79,10 +86,6 @@ class Product extends Model
 
     public function popImg()
     {
-        // $src = array_pop($this->images);
-        // $img = "<img class='img-fluid' src='".$src."'>";
-        // return $img;
-
         $src = array_pop($this->images);
         $smallImg = preg_replace('/offer\//', 'offer/tmp/_', $src);
         $img = "<img class='img-fluid' src='".$smallImg."'>";

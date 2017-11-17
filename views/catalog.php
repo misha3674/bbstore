@@ -7,10 +7,17 @@
     <?php include site_path."views".DIRSEP."partials".DIRSEP."_style.php"; ?>
 </head>
 <body>
-    
     <?php  $this->partials("_header.php"); ?>
       <div class="container">
-        <div class="row">
+    <div class="row">
+      <div class="col-1">
+        <div class="filter">
+          <a href="javascript:modal.filter()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col">
+      <div class="container">
+        <div id="content" class="row">
               <?php foreach($this->data['products'] as $product) { ?>
               <div class="col-md-6">
                 <div class="cart-item">
@@ -72,6 +79,9 @@
               <?php } ?> 
         </div>
       </div>
+      </div>
+    </div>
+  </div>
     <?php $this->partials("_footer.php"); ?>
     <?php $this->partials("_modal.php"); ?>
 

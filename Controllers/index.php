@@ -22,21 +22,30 @@ Class ControllerIndex extends ControllerBase {
         $data['products'][] = Product::find(8);
         $data['products'][] = Product::find(14);
 
-
-        // $gallery = $g->getGallery();
-
         $template->show($data);
 
     }
     public function catalog() {
         
+        if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+            $this->catalogAjax();
+            return;
+        }
+
         $template = new Template();
         $data = null;
-        $type = 1;
+        $types = [];
         if(isset($_GET['type']))
-            $type = $_GET['type'];
-        $data['products'] = Product::findWhere('type', $type);
+            $types[] = $_GET['type'];
+        $data['products'] = Product::findWhere( ['type' => $types] );
         $template->show($data);
+    }
+    private function catalogAjax() {
+        $template = new Template();
+        $data = null;
+        $types = json_decode($_GET['data']);
+        $data['products'] = Product::findWhere( ['type' => $types] );
+        $template->show($data, site_path."views".DIRSEP."catalogAjax.php");
     }
     public function delivery() {
         $template = new Template();

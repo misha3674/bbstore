@@ -1,28 +1,24 @@
 <button id="scrollup" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
     
-    <button id="shop-basket" title="Go to top">
-      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-      <span id="count-offer">0</span>
-    </button>
+<button id="shop-basket" title="Go to top">
+  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+  <span id="count-offer">0</span>
+</button>
 
-    <div class="modal" id="modal-thanks">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-                <div class="row justify-content-md-center">
-                    <h1>Дякуємо, за замовлення!</h1>
-                </div>
-            </div>
-          </div>
-        </div>
+<div class="modal" id="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
       </div>
     </div>
+  </div>
+</div>
 
     <div class="modal" id="modal-basket">
         <div class="modal-dialog" role="document">

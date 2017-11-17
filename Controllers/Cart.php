@@ -117,11 +117,9 @@ class ControllerCart extends ControllerBase
         $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 
         if(mail($this->sendto, $this->subject, $m, $headers)) {
-            return " <h1 class='msg'>Дякуємо за заявку</h1>
-                    <p class='msg'>Ваше замовлення успішно прийнято. Ми зателефонуємо Вам у найближчий час.
-                    Дякуемо :)</p>";
+            return file_get_contents(site_path."views".DIRSEP."modal".DIRSEP."_thanks.php");
         } else {
-            return "<p class='msg'>Запит спіткала невдачка, спробуйте знову. Вибачте за незручності</p>";
+            return file_get_contents(site_path."views".DIRSEP."modal".DIRSEP."_fail.php");
         }
     }   
 }
