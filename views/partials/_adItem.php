@@ -1,5 +1,5 @@
 <section>
-    <h1 class="text-center">Переваги пледу з рукавами</h1>
+    <h2 class="text-center">Переваги пледу з рукавами</h2>
     <div class="container">
         <div class="row">
             <div class="col-md-4">

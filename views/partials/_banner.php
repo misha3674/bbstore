@@ -27,10 +27,11 @@
     <div class="row justify-content-end">
       <div class="col-md-6 bg-offer">
           <div class="off">
-            <p class="text-md-center text-sm-right text-right head">При замовленні 3-х</p>
-            <p class="text-md-left  text-sm-right text-right head">4-й в подарунок</p>
-            <p class="text-md-center text-sm-right text-right desc">1+1+1=4</p>
+            <p class="text-md-center text-sm-right text-left head">При замовленні 3-х</p>
+            <p class="text-md-left  text-sm-right text-center head">4-й в подарунок</p>
+            <p class="text-md-center text-sm-right text-center desc">1+1+1=4</p>
           </div>
+          <a href="#" class="btn-advice">Перейти до покупок</a>
       </div>
     </div>
 </section>

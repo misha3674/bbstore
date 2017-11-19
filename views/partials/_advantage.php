@@ -1,6 +1,7 @@
 <section class="wrapper-well">
     <div class="container box-well">
         <div class="row">
+            <p>Наша команда відшиває пледи найвищої якості. У вас є можливість замовити плед будь якого типу та розміру. За детальної інформацієї звертайтеся до менеджера.</p>
             <div class="col-lg-3 col-6">
                 <div class="row">
                     <div class="col-lg-4 text-center"><i class="fa fa-users" aria-hidden="true"></i></div>

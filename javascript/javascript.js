@@ -110,12 +110,20 @@ $(document).ready(function(){
       lazyLoad: 'ondemand',
       slidesToShow: 3,
       centerPadding: '25px',
+      autoplay: true,
       slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 760,
           settings: {
             slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
           }
         }
       ]
@@ -236,6 +244,7 @@ $(document).ready(function(){
         success: function(data){
           $('#content').html(data);
           $('#modal').modal('hide');
+          $('#scrollup').click();
         },
         complete: function(){
           $(e).html('Показати');

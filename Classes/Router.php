@@ -11,10 +11,7 @@ Class Router {
 
     function setPath($path) {
 
-        $path = trim($path, '/\\');
-
         $path .= DIRSEP;
-
         if (is_dir($path) == false) {
 
                 throw new Exception ('Invalid controller path: `' . $path . '`');

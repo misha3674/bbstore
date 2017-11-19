@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-sm-4 col-4">
+                    <div class="col-4">
                         <a href="/"><img class="logo img-fluid" src="/img/logo.jpg" alt="logo"></a>
                     </div>
-                    <div class="col-sm-8 align-self-center">
+                    <div class="col-8 align-self-center">
                         <ul class="f-nav">
                             <li><a href="/catalog">Каталог товарів</a></li>
                             <li><a href="/delivery">Доставка і Оплата</a></li>

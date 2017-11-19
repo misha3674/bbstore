@@ -10,7 +10,7 @@
     <?php  $this->partials("_header.php"); ?>
 
     <div class="container block-certif">
-        <h1 class="text-center headline-certif">СЕРТИФІКАТИ ЯКОСТІ</h1>
+        <h2 class="text-center headline-certif">СЕРТИФІКАТИ ЯКОСТІ</h2>
         <p class="sub-h text-center">Сертифіковане виробницвто.Наше виробницвто і вся продукція пройшла сертифікацію якості міністерства охорони здоров’я</p>
         <div class="row">
             <div class="col-md-3 col-sm-6 col-6">
