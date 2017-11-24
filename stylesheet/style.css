@@ -81,6 +81,9 @@ section{
   -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
 }
+.img-fluid{
+  width: 100%;
+}
 .desc{
   font-size: 3rem;
   letter-spacing: 5px;
@@ -319,7 +322,7 @@ footer{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgba(38, 117, 203, 0.66); /* Set a background color */
+    background-color: rgba(38, 117, 203, 0.8); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 10px; /* Some padding */
@@ -344,9 +347,10 @@ footer{
 #shop-basket span{
   width: 20px;
   height: 20px;
+  background-color: #20b775;
   border-radius: 50%;
   font-size: 16px;
-  color: #05d;
+  color: #fff;
   position: absolute;
   top: 0;
   right: 0;
@@ -391,6 +395,7 @@ h4.margin{
 }
 div[id^="info"], .info{
   font-family: sans-serif;
+  color: #8e8e8e;
 }
 #filter .modal-header,#filter .modal-footer{
   padding: 7px;
@@ -507,13 +512,19 @@ input[type=checkbox]{
     padding: .25rem;
   }
   #shop-basket{
-    right: 15px;
-    font-size: 26px;
-    padding: 3px 7px;
-    border-right: 7px;
+    left: 1px;
+    bottom: 25%;
+    color: #007bff;
+    font-size: 30px;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  #shop-basket span{
+    left: 2px;
   }
   #scrollup{
-    right: 15px;
+    left: 1px;
   }
   .wrapper-main{
     min-height: 300px;
@@ -533,6 +544,10 @@ input[type=checkbox]{
   .container{
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .btn-success{
+    width: 80%;
+    margin-left: 10%;
   }
   body{
     font-size: 0.75rem;
@@ -572,10 +587,10 @@ input[type=checkbox]{
     font-size: 12px;
   }
   .name,.price{
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .oldprice{
-    font-size: .75rem;
+    font-size: 1rem;
   }
   .btn{
     padding: .3rem .4rem;

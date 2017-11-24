@@ -23,56 +23,46 @@
                 <div class="cart-item">
                   <div class="container">
                     <div class="row justify-content-center">
-                        <?php if(count($product->images) > 1) { ?>
-                          <div class="col-9">
-                            <?php echo $product->popImg(); ?>
-                          </div>
-                          <div class="col-3">
-                            <div class="box-add-photo">
-                                <?php echo $product->popImg(); ?>
-                                <?php echo $product->popImg(); ?>
-                                <?php echo $product->popImg(); ?>
-                            </div>
-                          </div>
-                        <?php } else { ?>
-                          <div class="col">
-                            <?php echo $product->popImg(); ?>
-                          </div>
-                        <?php } ?>
+                      <div class="col-12">
+                        <?php echo $product->popImg(); ?>
+                      </div>
                     </div>
                   </div>
-                  <p class="name text-left"><?php echo $product->getName(); ?></p>
+                  <p class="name text-center"><?php echo $product->getName(); ?></p>
+                  <p class="info"><?php echo $product->getInfo(); ?></p>
                   <div class="container">
                     <div class="row">
-                      <div class="col-xl-6 col-md-12 col-6 align-selef-center">
-                          <p class="oldprice">
-                            <?php 
-                              $o = $product->getOldprice();
-                              echo  $o ? $o:""; 
-                            ?>
+                      <div class="col-xl-6 col-md-12 align-selef-center">
+                        <div class="row">
+                        <?php 
+                          $o = $product->getOldprice();
+                          if($o) {
+                        ?>
+                          <div class="col-6 align-self-center">
+                            <p class="oldprice text-center">
+                              <?php
+                                echo  $o ? $o:""; 
+                              ?> грн.
+                            </p>
+                          </div>
+                        <?php } ?>
+                        <div class="col">
+                          <p class="price text-center">
+                            <?php echo $product->getPrice(); ?> грн.
                           </p>
-                          <p class="price">
-                            <?php echo $product->getPrice(); ?>
-                          </p>
+                        </div>
                       </div>
-                      <div class="col-xl-6 col-md-12 col-6">
-                        <a class="btn btn-primary" data-toggle="collapse" 
-                            href="#info<?php echo $product->id; ?>" 
-                            aria-expanded="false" aria-controls="collapse">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                        </a>
+                      </div>
+                      <div class="col-xl-6 col-md-12 align-selef-center">
                         <a class="btn btn-success"  
                               href="javascript:cart.add(
                                 '<?php echo $product->getName(); ?>', 
                                 '<?php echo $product->getPrice(); ?>'
                               )">
-                          <i class="fa fa-shopping-cart"></i>
+                          <span>Замовити</span>
                         </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="collapse show" id="info<?php echo $product->id; ?>">
-                      <?php echo $product->getInfo(); ?>
                   </div>
                 </div>
               </div>
