@@ -114,16 +114,15 @@ $(document).ready(function(){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 760,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 2,
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 760,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
           }
         }
       ]
@@ -146,7 +145,7 @@ $(document).ready(function(){
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 760,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

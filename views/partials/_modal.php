@@ -1,10 +1,5 @@
 <button id="scrollup" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
     
-<button id="shop-basket" title="Go to top">
-  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-  <span id="count-offer">0</span>
-</button>
-
 <div class="modal" id="modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

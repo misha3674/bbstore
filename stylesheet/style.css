@@ -42,13 +42,15 @@ h2{
 a{
   transition: 0.3s all ease;
 }
+body{
+  background-color: #f6ffcb52;
+}
 header{
-    padding: .5rem;
-    min-height: 50px;
-    background: #fff;
-    -webkit-box-shadow:0px 1px 1px #bdbdbd;
-    -moz-box-shadow:0px 1px 1px #bdbdbd;
-    box-shadow:0px 1px 1px #bdbdbd;
+    min-height: 55px;
+}
+.navbar-nav .nav-link{
+  text-align: center;
+  font-size: 1.25rem;
 }
 input{
   margin-bottom: .5rem;
@@ -57,11 +59,29 @@ img.logo{
   width: 165px;
   height: auto;
 }
+.modal-header,.modal-footer,.modal-body{
+  padding: 5px;
+}
+.btn-success{
+  -webkit-box-shadow: 0 5px 3px -3px #777;
+       -moz-box-shadow: 0 5px 3px -3px #777;
+            box-shadow: 0 5px 3px -3px #777;
+}
 .motto{
   color: #007bff;
   font-size: 1.2em;
   font-family: Arial;
   font-weight: bold;
+}
+.bg-custom{
+  background-color: rgba(38, 117, 203, 1);
+  -webkit-box-shadow: 0 5px 3px -3px #777;
+    -moz-box-shadow: 0 5px 3px -3px #777;
+    box-shadow: 0 5px 3px -3px #777;
+    border-radius: 0 0 2px 2px;
+}
+.navbar-dark .navbar-toggler{
+  border-color: #fff;
 }
 section{
   padding: 1rem 0;
@@ -332,10 +352,7 @@ footer{
     background-color: #555; /* Add a dark-grey background on hover */
 }
 #shop-basket{
-    position: fixed;
-    bottom: 40%;
-    right: 20px;
-    z-index: 99;
+    position: relative;
     outline: none;
     background-color: rgba(255, 255, 255, 0.6);
     color: rgb(243, 83, 72);
@@ -512,9 +529,7 @@ input[type=checkbox]{
     padding: .25rem;
   }
   #shop-basket{
-    left: 1px;
-    bottom: 25%;
-    color: #007bff;
+    color: #fff;
     font-size: 30px;
     background: transparent;
     padding: 0;
