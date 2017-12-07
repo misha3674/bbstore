@@ -4,7 +4,7 @@
         die(404);
 
 try{
-    $db = new PDO('mysql:host=mysql.zzz.com.ua;port=3306;dbname=singlepage', 'bbstore', 'pwdbbstore12PWD');
+    $db = new PDO('mysql:host=localhost;port=3308;dbname=mvc', 'root', '');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "CREATE TABLE products (
                 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
