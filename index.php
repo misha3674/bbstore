@@ -26,7 +26,6 @@ spl_autoload_register(function ($class_name) {
 });
 
 $db = new PDO('mysql:host=localhost;port=3308;dbname=mvc', 'root', '');
-// $db = new PDO('mysql:host=mysql.zzz.com.ua;port=3306;dbname=singlepage', 'bbstore', 'pwdbbstore12PWD');
 session_start();
 $router = new Router();
 $router->setPath(site_path.'Controllers');
