@@ -42,7 +42,7 @@
             <div class="wapper-checkout">
                 <input type="text" name="namechekout" placeholder="Имя Фамилия" required>
                 <input class="phone-mask" type="text" name="phonechekout" placeholder="Телефон" required>
-                <a href="javascript:cart.submit()" class="btn btn-primary">Оформить заказ</a>
+                <a href="javascript:cart.submit()" class="btn btn-success">Оформить заказ</a>
             </div>
           </div>
         </div>

@@ -1,11 +1,10 @@
 <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom">
+    <nav class="navbar navbar-dark bg-custom">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <a class="navbar-brand" href="/">
-        <!-- <img src="/img/logo.jpg" width="90" height="50" class="d-inline-block align-top" alt="BestBlanket"> -->
-        BBStore
+        <img src="/img/logo.jpg" id="logo" class="d-inline-block align-top" alt="BestBlanket">
       </a>
     <button id="shop-basket" title="Go to top">
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>

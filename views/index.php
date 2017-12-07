@@ -14,11 +14,10 @@
         $this->partials("_banner.php");
         $this->partials("_advantage.php");
         $this->partials("_popular.php");
-        $this->partials("_quantities.php");
-        $this->partials("_advice.php");
-        $this->partials("_adItem.php");
+        // $this->partials("_advice.php");
+        // $this->partials("_adItem.php");
         $this->partials("_category.php");
-        $this->partials("_fan.php");
+        // $this->partials("_fan.php");
         $this->partials("_reviews.php");
         $this->partials("_footer.php");
         $this->partials("_modal.php");
